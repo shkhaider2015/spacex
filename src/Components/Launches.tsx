@@ -32,8 +32,20 @@ export const Launches = () : JSX.Element => {
                 //         <text> Mission Name : {item.mission_name} </text>
                 //     </div>
                 // )
-                data.launches.map(
-                    (item:ILaunches, index:number) =>  <LaunchCard key={index} item={item} />
+                // data.launches.map(
+                //     (item:ILaunches, index:number) =>  <LaunchCard key={index} item={item} />
+                // )
+                data.launches.filter(
+                    (item:ILaunches) => {
+                        if(!item.links.flickr_images.length || !item.details)
+                        {
+                            return false;
+                        }
+                        return true
+                    }
+                )
+                .map(
+                    (item:ILaunches, index:number) => <div className="col-lg-4 mt-5" > <LaunchCard key={index} item={item} /> </div>
                 )
             }
         </div>

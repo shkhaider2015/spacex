@@ -1,9 +1,10 @@
 import { gql } from "@apollo/client";
 
-const limit: number = 10;
+const limit: number = 20;
 
 export const LAUNCHES = gql`{
   launches(limit: ${limit}) {
+    id
     launch_success
     mission_name
     launch_year
