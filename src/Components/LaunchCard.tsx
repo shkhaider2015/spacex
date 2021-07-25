@@ -17,7 +17,7 @@ export const LaunchCard = ({ item }:Titem) =>
       <Card.Text>
         { item.details ? item.details.slice(0, 50) + ' ......': ``}
       </Card.Text>
-      <Button variant="primary" onClick={() => navigate(item.id)} >View Details</Button>
+      <Button className="w-100" variant="primary" onClick={() => navigate(item.id)} >View Details</Button>
     </Card.Body>
   </Card>
 }

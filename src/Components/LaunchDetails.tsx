@@ -35,7 +35,7 @@ export const LaunchDetails = () => {
 
 
     return <div className="row" >
-        <div className="col-lg-12  border" >
+        <div className="col-lg-12  " >
             <div className="d-flex flex-row justify-content-center" >
                 <span className="display-1 p-5" >{details?.mission_name}</span>
                 <div className="d-flex flex-column p-5 pb-0 display-10" >
@@ -47,7 +47,7 @@ export const LaunchDetails = () => {
             </div>
         </div>
 
-        <div className="row border mt-2" >
+        <div className="row  mt-2" >
             <div className="col-3" ></div>
             <div className="col-6 text-center " >
                 <p className="lead" > {details?.details} </p> 
@@ -57,7 +57,7 @@ export const LaunchDetails = () => {
 
         <div className="row mt-3 pb-5" >
             <span className="col-lg-2" ></span>
-            <Carousel className="col-lg-8 pl-0 border" >
+            <Carousel className="col-lg-8 pl-0 " >
                 {
                     details?.links.flickr_images.map(
                         (image:string, index:number) => <Carousel.Item key={index} interval={1000}>
