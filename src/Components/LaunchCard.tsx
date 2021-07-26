@@ -12,8 +12,8 @@ export const LaunchCard = ({ item, isWait }:Titem) =>
 {
   const navigate = useNavigate();
 
-    return <Card className="shadow" style={{ width: '18rem' }}>
-    <Card.Img variant="top" src={ !isWait ? item.links.flickr_images[0] : PlaceHolderGif  } height="300px"  />
+    return <Card className="shadow w-75">
+    <Card.Img variant="top" src={ !isWait ? item.links.flickr_images[0] : PlaceHolderGif  } height="300vh"  />
     <Card.Body>
       <Card.Title> { !isWait ? item.mission_name : <img alt="jh" src={PlaceHolderGif} width="70%" height="12px" /> } </Card.Title>
       <Card.Text>

@@ -11,7 +11,7 @@ const client = new ApolloClient({
 function App() {
   return <div className="container" >
     <div className="text-center" >
-      <img alt="logo" src={SpaceXLogo} width="700px" />
+      <img alt="logo" src={SpaceXLogo} width="60%" />
     </div>
     <ApolloProvider client={client} >
       <Router>

@@ -4,5 +4,7 @@ $theme-colors: (
   "danger": #ff4136
 );
 
+
 // Import Bootstrap and its default variables
-@import '~bootstrap/scss/bootstrap.scss';
+// @import '~bootstrap/scss/bootstrap.scss';
+@import "node_modules/bootstrap/scss/bootstrap";

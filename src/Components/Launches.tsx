@@ -21,7 +21,7 @@ export const Launches = (): JSX.Element => {
         }, [data]
     )
 
-    if (!loading) {
+    if (loading) {
         return <div style={{ height : '70vh', display : 'grid', placeItems : 'center' }} >
             <Loader type="Bars" color="#005288" height={80} width={80} />
         </div>
@@ -45,7 +45,7 @@ export const Launches = (): JSX.Element => {
                 }
             )
                 .map(
-                    (item: ILaunches, index: number) => <div key={index} className="col-lg-4 mt-5" > <LaunchCard item={item} isWait={isWait} /> </div>
+                    (item: ILaunches, index: number) => <div key={index} className="col-lg-4 col-md-6 col-sm-12 col-12 mt-5 d-flex justify-content-center text-center" > <LaunchCard item={item} isWait={isWait} /> </div>
                 )
         }
     </div>

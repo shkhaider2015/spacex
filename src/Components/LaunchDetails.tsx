@@ -48,11 +48,11 @@ export const LaunchDetails = () => {
         </div>
 
         <div className="row  mt-2" >
-            <div className="col-3" ></div>
-            <div className="col-6 text-center " >
+            <div className="col-lg-3 col-md-3 col-sm-0 col-0" ></div>
+            <div className="col-lg-6 col-md-6 col-sm-12 col-12 text-lg-center " >
                 <p className="lead" > {details?.details} </p> 
             </div>
-            <div className="col-3" ></div>
+            <div className="col-lg-3 col-md-3 col-sm-0 col-0" ></div>
         </div>
 
         <div className="row mt-3 pb-5" >
