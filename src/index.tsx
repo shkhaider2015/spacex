@@ -1,4 +1,5 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './CustomBootstrap.scss'
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
