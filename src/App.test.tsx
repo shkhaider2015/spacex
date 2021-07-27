@@ -1,9 +1,7 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
 import { MockedProvider } from "@apollo/client/testing"
 import App from './App';
-import { mount, shallow, ShallowWrapper } from "enzyme";
-import TestRenderer, { ReactTestRendererJSON, ReactTestRendererTree } from "react-test-renderer";
+import { shallow } from "enzyme";
+import TestRenderer from "react-test-renderer";
 import { MyRouter } from "./Components/Routes";
 import {BrowserRouter} from "react-router-dom";
 import { SpaceX_Logo } from "./Static/Static";
@@ -33,5 +31,3 @@ describe("App.tsx Testing Cases", () => {
   });
 
 })
-
-

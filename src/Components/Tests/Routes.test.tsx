@@ -1,6 +1,5 @@
-import { mount, shallow, ShallowWrapper } from "enzyme";
+import { mount} from "enzyme";
 import { MemoryRouter } from "react-router-dom";
-import App from "../../App";
 import { MyRouter } from "../Routes";
 import { Launches } from "../Launches";
 import { LaunchDetails } from "../LaunchDetails";
@@ -35,7 +34,7 @@ const mockData:ILaunches = {
 
 }
 
-const mockk:any = [
+export const mock:any = [
   {
     request : {
       query : LAUNCHES
@@ -71,7 +70,7 @@ describe("MyRouter : Test Router Component", () => {
     }
 
     wrapper = mount(
-      <MockedProvider mocks={mockk} >
+      <MockedProvider mocks={mock} >
         <MemoryRouter initialEntries={[testEntry]} >
           <MyRouter />
         </MemoryRouter>
