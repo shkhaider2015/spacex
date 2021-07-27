@@ -14,14 +14,17 @@ export const LaunchDetails = () => {
 
     React.useEffect(
         () => {
-            data.launches.map(
-                (item: ILaunches) => {
-                    if (item.id === launchid) {
-                        setDetails(item);
+            if(data)
+            {
+                data.launches.map(
+                    (item: ILaunches) => {
+                        if (item.id === launchid) {
+                            setDetails(item);
+                        }
+                        return null
                     }
-                    return null
-                }
-            )
+                )
+            }
             // eslint-disable-next-line
         }, [data]
     )

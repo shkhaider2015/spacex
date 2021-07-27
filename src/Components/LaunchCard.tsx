@@ -1,7 +1,8 @@
 import { ILaunches } from "../Types/queryTypes";
 import { Card, Button } from "react-bootstrap";
 import { useNavigate } from 'react-router-dom';
-import PlaceHolderGif from "../Static/Frametitle.gif";
+// import PlaceHolderGif from "../Static/Frametitle.gif";
+import { PlaceHolderGif } from "../Static/Static";
 
 type Titem = {
     item : ILaunches,

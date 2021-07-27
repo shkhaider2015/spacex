@@ -1,0 +1,16 @@
+import { shallow, ShallowWrapper } from "enzyme";
+import { LaunchCard } from "../LaunchCard";
+
+
+describe("", () => {
+  let wrapper: ShallowWrapper;
+  beforeEach(() => {
+    // wrapper = shallow(<LaunchCard item={} />)
+  })
+
+  test('LaunchCard : Test App Component', () => {
+    // expect(wrapper.find(".container").text()).toBe(`<ApolloProvider />`);
+    // wrapper.debug();
+  });
+
+})

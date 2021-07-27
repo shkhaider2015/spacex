@@ -22,7 +22,7 @@ export const Launches = (): JSX.Element => {
     )
 
     if (loading) {
-        return <div style={{ height : '70vh', display : 'grid', placeItems : 'center' }} >
+        return <div id="loading" style={{ height : '70vh', display : 'grid', placeItems : 'center' }} >
             <Loader type="Bars" color="#005288" height={80} width={80} />
         </div>
     }
