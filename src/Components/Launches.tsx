@@ -20,6 +20,7 @@ export const Launches = (): JSX.Element => {
             // eslint-disable-next-line
         }, [data]
     )
+    
 
     if (loading) {
         return <div id="loading" style={{ height : '70vh', display : 'grid', placeItems : 'center' }} >
