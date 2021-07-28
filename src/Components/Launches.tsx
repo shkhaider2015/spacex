@@ -15,7 +15,7 @@ export const Launches = (): JSX.Element => {
             {
                 setTimeout(() => {
                     setIsWait(!isWait);
-                }, 3000);
+                }, 2500);
             }
             // eslint-disable-next-line
         }, [data]
@@ -32,7 +32,6 @@ export const Launches = (): JSX.Element => {
             {error.message}
         </div>
     }
-
     
     return <div className="row" >
         {
