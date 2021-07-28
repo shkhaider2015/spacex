@@ -30,10 +30,10 @@ export const LaunchDetails = () => {
     )
 
     if (loading) {
-        return <div> ...Loading </div>
+        return <div> <p>...loading</p> </div>
     }
     if (error) {
-        return <div> Error </div>
+        return <div> <p>Error</p> </div>
     }
 
 
