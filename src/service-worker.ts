@@ -81,7 +81,12 @@ self.addEventListener('message', (event) => {
 var CACHE_NAME = 'pwa-spacex';
 var urlsToCache = [
   '/',
-//   '/completed'
+  '/src/index.tsx',
+  '/src/App.tsx',
+  '/src/Components/Routes.tsx',
+  '/src/Components/Launches.tsx',
+  '/src/Components/LaunchDetails.tsx',
+  '/src/Components/LaunchCard.tsx',
 ];
 
 // Install a service worker
